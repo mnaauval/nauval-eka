@@ -19,6 +19,7 @@
   --col-background: #420fe7;
   --col-accent: #eea1be;
   --col-accent2: #8c85f3;
+  --col-accent3: #18033c;
   --font-averta: "Averta";
   --font-tex: "TeX";
   --font-texbold: "Tex Bold";
@@ -35,14 +36,14 @@ p::selection {
   color: var(--col-background);
 }
 a {
-  color: white;
+  color: white !important;
   text-decoration: none;
-  transition: 0.4s;
+  transition: all 0.5s ease !important;
+  -moz-transition: all 0.5s ease !important; /* Firefox 4 */
+  -webkit-transition: all 0.5s ease !important; /* Safari and Chrome */
 }
 a:hover {
   background: var(--col-accent);
-  color: white;
-  padding: 10px;
 }
 ul,
 ol {
@@ -60,21 +61,23 @@ p {
 }
 .fas,
 .fab,
-.fa {
+.fa,
+.far {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  /* padding: 0.3rem; */
-  /* width: 1rem; */
   font-size: 1.7rem;
 }
 
 /* =============== NAV CSS =============== */
-.mynavbar {
+/* .mynavbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 90px;
+  padding-top: 70px;
+}
+.mynavbar-logo {
+  padding: 0;
 }
 .mynavbar a {
   padding: 10px;
@@ -82,13 +85,40 @@ p {
 .mynavbar-nav {
   display: flex;
   justify-content: space-between;
-  text-align: center;
 }
 .mynav-item {
   padding: 0 15px;
+} */
+.navbar {
+  padding-top: 70px;
+}
+.navbar-brand {
+  padding: 0.5rem 0.5rem;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.nav-item {
+  padding: 0 15px;
+}
+.nav-item .nav-link {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+}
+.dropdown-menu {
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--col-accent);
 }
 
 /* =============== MAIN CSS =============== */
+/* Hello */
 .heading-about {
   padding-top: 35px;
   color: var(--col-accent);
@@ -97,20 +127,26 @@ p {
   padding-bottom: 25px;
 }
 .heading-hello span {
+  background-color: var(--col-accent);
   font-size: 172px;
   color: var(--col-background);
   text-shadow: -1px -1px 0 lightgray, 1px -1px 0 lightgray, -1px 1px 0 lightgray, 1px 1px 0 lightgray;
 }
 .heading-hello span::selection {
-  background: var(--col-accent);
+  color: var(--col-accent);
 }
 .heading-hello {
   font-size: 110px;
   line-height: 1.3;
   font-family: var(--font-texbold);
 }
+/* About */
+.content-about {
+  padding-bottom: 60px;
+}
 .left-content-about {
   padding-top: 80px;
+  padding-right: 60px;
 }
 .left-content-about h3 {
   font-family: var(--font-texbold) !important;
@@ -120,11 +156,138 @@ p {
 .left-content-about p {
   padding-top: 25px;
 }
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgba(66, 15, 231, 0.5);
+}
 .right-content-about img {
+  display: block;
   width: 720px;
   height: 600px;
   object-fit: cover;
 }
 .right-content-about figcaption {
   text-align: center;
+}
+/* Services */
+.content-services {
+  padding: 90px 80px 40px;
+  background: var(--col-accent);
+}
+.content-services,
+.content-services a,
+.content-services p {
+  color: var(--col-accent3);
+}
+.content-services h1,
+.services-item {
+  font-family: var(--font-texbold);
+}
+.services.item p {
+  font-family: var(--font-cotham);
+}
+.content-services h1 {
+  font-size: 90px;
+  padding-bottom: 30px;
+}
+.content-services p {
+  padding-bottom: 30px;
+}
+.services-list {
+  font-size: 30px;
+  list-style: georgian;
+  column-count: 2;
+}
+.services-item {
+  padding-bottom: 10px;
+}
+.services-item p {
+  padding: 20px 0 10px;
+  margin-left: -30px;
+}
+/* CV */
+.content-cv {
+  padding: 40px 30px 0 40px;
+}
+.content-cv h2 {
+  font-family: var(--font-tex);
+}
+.fa-list-alt {
+  font-size: 30px;
+}
+.content-cv p {
+  padding: 30px 0 10px;
+}
+.btn-resume {
+  width: 300px;
+  height: 60px;
+  color: white;
+  background-color: var(--col-background);
+  border-color: lightgray;
+}
+.btn-resume:hover {
+  color: white;
+  background-color: var(--col-accent3);
+  border-color: var(--col-accent3);
+}
+.btn-resume:active {
+  color: white;
+  background-color: var(--col-accent3);
+  border-color: var(--col-accent3);
+}
+.btn-resume:focus {
+  background-color: var(--col-accent3);
+  box-shadow: none;
+  border-color: lightgray;
+  color: white;
+}
+/* Exploration */
+.content-explore {
+  padding: 100px 0 30px;
+}
+.content-explore h1 {
+  /* background-color: var(--col-accent); */
+  font-size: 172px;
+  color: var(--col-background);
+  text-shadow: -1px -1px 0 lightgray, 1px -1px 0 lightgray, -1px 1px 0 lightgray, 1px 1px 0 lightgray;
+  margin-left: -110px;
+}
+.content-explore h3 {
+  padding: 30px 0;
+}
+.card {
+  transition: all 1s ease !important;
+  -moz-transition: all 0.5s ease !important; /* Firefox 4 */
+  -webkit-transition: all 0.5s ease !important; /* Safari and Chrome */
+  /* margin: 0 auto; */
+  padding: 30px 20px;
+  background-color: transparent;
+  border: none;
+}
+.card-body {
+  padding: 0;
+}
+.card-title {
+  padding: 1.5rem 0;
+  color: var(--col-accent);
+}
+.card-text {
+  color: white;
+  font-size: 23px;
+}
+.card:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  transform: translateY(-30px);
 }

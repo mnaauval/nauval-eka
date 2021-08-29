@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <div class="container-nav">
+      <!-- <div class="container-nav">
         <nav class="mynavbar">
           <a href="#" class="mynavbar-logo fas fa-low-vision"></a>
           <ul class="mynavbar-nav">
@@ -34,7 +34,36 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </div> -->
+      <!-- <nav class="navbar navbar-expand-lg"> -->
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand fas fa-low-vision" href="#"></a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fab fa-github" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fab fa-instagram" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fab fa-linkedin" href="#"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Career </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">JobStreet.com</a></li>
+                <li><a class="dropdown-item" href="#">Karir.com</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </nav>
     </header>
     <main>
       <div class="container">
@@ -42,7 +71,7 @@
           <h3 class="heading-about">About Me</h3>
           <h1 class="heading-hello">
             <span
-              >Hello ! <br />
+              >Hello !&nbsp;<br />
               I'm Nauval</span
             >
             <br />
@@ -53,7 +82,7 @@
           <div class="row">
             <div class="col-md-6 justify-content-center">
               <div class="left-content-about">
-                <h3>I'm Nauval Eka, Computer Engineering graduate with front-end skill currently living in East Java, Indonesia</h3>
+                <h3>I'm Nauval Eka, front-end developers currently living in East Java, Indonesia</h3>
                 <p>
                   I'm currently looking for front-end opportunity. My experience comes from studying in college about web front-end development, show sensor data on a web page and also learn about mySQL database. I also have internship
                   experience at PT. PAL Indonesia building front-end mobile helpdesk app for PT. PAL Indonesia.
@@ -63,7 +92,9 @@
             <div class="col-md-6 justify-content-center">
               <div class="right-content-about">
                 <figure>
-                  <img src="./image/goh-rhy-yan-XgsVB9Uwpq8-unsplash.jpg" alt="profile picture" />
+                  <div class="overlay">
+                    <img src="./image/goh-rhy-yan-XgsVB9Uwpq8-unsplash.jpg" alt="profile picture" />
+                  </div>
                   <figcaption>
                     Photo by <a href="https://unsplash.com/@gohrhyyan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Goh Rhy Yan</a> on
                     <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -73,26 +104,60 @@
             </div>
           </div>
         </div>
-        <!-- <div class="content-about">
-          <div class="content-box col">
-            <h2>I'm Nauval Eka, looking for front-end opportunity currently living in East Java, Indonesia</h2>
-            <p>
-              My experience comes from studying and working in college. I'm currently using Bootstrap 5 for my projects and plans to learn more about React.js. I'm open for full-time or freelance front-end opportunities. I also dabbled with
-              some technology like SaSS.
-            </p>
+        <div class="content-services">
+          <h1>Services</h1>
+          <p>Over these past 6 months, I built some portfolio projects and dabbled with some technologies like SAAS. I'm currently using Bootstrap and sometimes using Materialize for my projects.</p>
+          <ul class="services-list">
+            <li class="services-item">
+              Website Developing
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam.</p>
+            </li>
+            <li class="services-item">
+              Bootstrap 5
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam.</p>
+            </li>
+            <li class="services-item">
+              Materialize
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam.</p>
+            </li>
+            <li class="services-item">
+              Responsive
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="content-cv">
+          <h2><i class="far fa-list-alt"></i> Curriculum Vitae</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur <br />
+            adipisicing elit. Magnam, esse.
+          </p>
+          <button type="button" class="btn btn-resume">My CV</button>
+        </div>
+        <div class="content-explore">
+          <h1>Exploration</h1>
+          <h3>
+            Driven by a love exploring new <br />
+            knowledge around design and more
+          </h3>
+          <p>Collecting visual inspirations, learning new things and building projects.</p>
+          <div class="card-box d-flex justify-content-between">
+            <div class="card" style="width: 500px">
+              <img src="./image/2021-08-19-07-09-porto-bs5.vercel.app.png" class="card-img-top" alt="image preview" />
+              <div class="card-body">
+                <h6 class="card-title">Content Title</h6>
+                <p class="card-text">Content Caption Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 500px">
+              <img src="./image/Addtitle-Dev-Web-Development.png" class="card-img-top" alt="image preview" />
+              <div class="card-body">
+                <h6 class="card-title">Content Title</h6>
+                <p class="card-text">Content Caption Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
           </div>
-          <div class="content-photo col">
-            <figure>
-              <img src="./image/goh-rhy-yan-XgsVB9Uwpq8-unsplash.jpg" alt="Profile Photo" />
-              <figcaption>
-                Photo by
-                <a href="https://unsplash.com/@gohrhyyan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Goh Rhy Yan</a>
-                on
-                <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> -->
+        </div>
       </div>
     </main>
 
