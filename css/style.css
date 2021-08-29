@@ -68,6 +68,9 @@ p {
   border-radius: 50%;
   font-size: 1.7rem;
 }
+.fa-linkedin {
+  border-radius: 0;
+}
 
 /* =============== NAV CSS =============== */
 .navbar {
