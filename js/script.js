@@ -19,5 +19,10 @@ function copyToClipboard(elementId) {
   document.body.removeChild(aux);
 
   //   alert("Text copied");
-  //   document.getElementById("inner-text").innerHTML = "Copied";
+  document.getElementById("inner-text").innerHTML = "Copied";
+}
+
+// On Mouse Leave
+function changeValue() {
+  document.getElementById("inner-text").innerHTML = "Click to copy";
 }

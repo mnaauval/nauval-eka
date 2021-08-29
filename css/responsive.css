@@ -1,1 +1,66 @@
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  .content-explore h1 {
+    margin-left: -110px;
+  }
+}
+@media (min-width: 1400px) {
+}
 
+@media (max-width: 575px) {
+}
+@media (max-width: 767px) {
+  .nav-item {
+    padding: 0 5px;
+  }
+  .left-content-about {
+    /* padding-top: 80px; */
+    padding: 0;
+    padding-top: 20px;
+  }
+  .left-content-about h3 {
+    font-size: 1.5rem;
+  }
+  .left-content-about p {
+    text-align: justify;
+  }
+  .content-services {
+    padding: 20px;
+  }
+  .content-services h1 {
+    font-size: 50px;
+  }
+  .services-list {
+    list-style: georgian;
+    column-count: 1;
+  }
+  .content-cv {
+    padding-left: 0;
+  }
+  .btn-resume {
+    width: 100%;
+  }
+  .content-explore {
+    padding: 50px 0;
+  }
+  .content-contact p {
+    text-align: justify;
+  }
+  .fa-envelope {
+    font-size: 15px;
+  }
+  .box h2 {
+    padding: 10px;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1399px) {
+}

@@ -67,7 +67,7 @@
     </header>
     <main>
       <div class="container">
-        <header>
+        <header class="header-hello">
           <h3 class="heading-mini">About Me</h3>
           <h1 class="heading-hello">
             <span
@@ -141,19 +141,21 @@
             knowledge around design and more
           </h3>
           <p>Collecting visual inspirations, learning new things and building projects.</p>
-          <div class="card-box d-flex justify-content-between">
-            <div class="card" style="width: 500px">
-              <img src="./image/2021-08-19-07-09-porto-bs5.vercel.app.png" class="card-img-top" alt="image preview" />
-              <div class="card-body">
-                <h6 class="card-title">Content Title</h6>
-                <p class="card-text">Content Caption Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="row">
+            <div class="col-md-8 justify-content-between card-box">
+              <div class="card">
+                <img src="./image/2021-08-19-07-09-porto-bs5.vercel.app.png" class="card-img-top" alt="image preview" />
+                <div class="card-body">
+                  <h6 class="card-title">Content Title</h6>
+                  <p class="card-text">Content Caption Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
               </div>
-            </div>
-            <div class="card" style="width: 500px">
-              <img src="./image/Addtitle-Dev-Web-Development.png" class="card-img-top" alt="image preview" />
-              <div class="card-body">
-                <h6 class="card-title">Content Title</h6>
-                <p class="card-text">Content Caption Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="card">
+                <img src="./image/Addtitle-Dev-Web-Development.png" class="card-img-top" alt="image preview" />
+                <div class="card-body">
+                  <h6 class="card-title">Content Title</h6>
+                  <p class="card-text">Content Caption Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -167,12 +169,12 @@
           </h1>
           <p>I'm open to freelance or full time opportunities or remote position.</p>
           <p>I'm not really active on <strong>LinkedIn</strong> but can stay touch with me on <strong>Twitter</strong> and <strong>Instragram</strong>. I post some of my work on <strong>Github.</strong></p>
-          <div id="copy" onclick="copyToClipboard('text-element')" class="copy-box">
+          <div id="copy" onmouseleave="changeValue()" onclick="copyToClipboard('text-element')" class="copy-box">
             <div class="box d-flex">
-              <h2><i class="far fa-envelope"></i></h2>
-              <h2>mnaauval20@gmail.com</h2>
+              <h2 class="email-icon"><i class="far fa-envelope"></i></h2>
+              <h2 class="email-box">mnaauval20@gmail.com</h2>
             </div>
-            <div class="box-inner"><p>Click to copy</p></div>
+            <div class="box-inner"><p id="inner-text">Click to copy</p></div>
           </div>
         </div>
       </div>
