@@ -1,6 +1,12 @@
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
+  #drop1 {
+    display: none;
+  }
+  #drop2 {
+    display: block;
+  }
 }
 @media (min-width: 992px) {
 }
@@ -15,6 +21,12 @@
 @media (max-width: 575px) {
 }
 @media (max-width: 767px) {
+  #drop1 {
+    display: block;
+  }
+  #drop2 {
+    display: none;
+  }
   .nav-item {
     padding: 0 5px;
   }

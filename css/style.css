@@ -282,6 +282,9 @@ p {
 .content-contact {
   padding-bottom: 50px;
 }
+p > a:hover {
+  background: transparent;
+}
 .content-contact h1 {
   font-size: 60px;
 }
