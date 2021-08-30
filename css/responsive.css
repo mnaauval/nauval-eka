@@ -9,6 +9,9 @@
   }
 }
 @media (min-width: 992px) {
+  .card {
+    width: 85%;
+  }
 }
 @media (min-width: 1200px) {
   .content-explore h1 {
@@ -60,6 +63,7 @@
   .content-explore {
     padding: 50px 0;
   }
+
   .content-contact p {
     text-align: justify;
   }
@@ -71,6 +75,9 @@
   }
 }
 @media (max-width: 991px) {
+  .card {
+    width: 100%;
+  }
 }
 @media (max-width: 1199px) {
 }

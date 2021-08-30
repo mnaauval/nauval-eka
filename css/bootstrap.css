@@ -630,16 +630,14 @@ progress {
 
 @media (min-width: 576px) {
   .container-sm,
-  .container,
-  .container-nav {
+  .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   .container-md,
   .container-sm,
-  .container,
-  .container-nav {
+  .container {
     max-width: 720px;
   }
 }
@@ -647,8 +645,7 @@ progress {
   .container-lg,
   .container-md,
   .container-sm,
-  .container,
-  .container-nav {
+  .container {
     max-width: 960px;
   }
 }
@@ -660,9 +657,6 @@ progress {
   .container {
     max-width: 1140px;
   }
-  .container-nav {
-    max-width: 1300px;
-  }
 }
 @media (min-width: 1400px) {
   .container-xxl,
@@ -672,9 +666,6 @@ progress {
   .container-sm,
   .container {
     max-width: 1320px;
-  }
-  .container-nav {
-    max-width: 1500px;
   }
 }
 .row {
